@@ -1,0 +1,32 @@
+﻿
+
+
+@model int[]
+
+
+@{ foreach (var item in Model)
+    {
+        @item
+    }
+ }
+
+@{
+        for (int i = 1; i <= Model.Length; i++)
+        {
+           
+            @(i+" ")
+        }
+ }
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>
+    
+
+
+
+
+
